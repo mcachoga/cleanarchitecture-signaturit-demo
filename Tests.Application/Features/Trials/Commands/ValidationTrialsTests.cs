@@ -1,13 +1,7 @@
-﻿using Signaturit.Application.Features.Trials.Commands.Create;
-using Signaturit.Application.Interfaces.Repositories;
-using Signaturit.Application.Mappings;
-using Signaturit.Infrastructure.Repositories;
-using AutoMapper;
-using Moq;
-using NUnit.Framework;
-using Signaturi.Infrastructure.UnitTests.Mocks;
+﻿using NUnit.Framework;
+using Signaturit.Application.Features.Trials.Commands.Create;
 
-namespace CleanArch.Application.UnitTests.Features.Categories.Commands
+namespace Signaturit.Application.UnitTests.Features.Trials.Commands
 {
     public class ValidationTrialsTests
     {

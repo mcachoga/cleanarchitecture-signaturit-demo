@@ -1,20 +1,15 @@
-﻿using Signaturit.Application.Features.Trials.Queries.GetAllCached;
-using Signaturit.Application.Interfaces.CacheRepositories;
-using Signaturit.Application.Interfaces.Repositories;
-using Signaturit.Application.Mappings;
-using AutoMapper;
+﻿using AutoMapper;
 using Moq;
 using NUnit.Framework;
-using Signaturi.Infrastructure.UnitTests.Mocks;
-using System.Collections.Generic;
+using Signaturit.Application.Features.Trials.Queries.GetAllCached;
+using Signaturit.Application.Interfaces.CacheRepositories;
+using Signaturit.Application.Mappings;
+using Signaturit.Infrastructure.UnitTests.Mocks;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static Signaturit.Application.Features.Trials.Queries.GetById.GetTrialByIdQuery;
-using Signaturit.Application.Features.Trials.Queries.GetById;
-using Signaturit.Web.Areas.Catalog.Models;
-using System.Linq;
 
-namespace Signaturi.Application.UnitTests.Features.Trials.Queries
+namespace Signaturit.Application.UnitTests.Features.Trials.Queries
 {
     public class GetTrialsListQueryHandlerTests
     {

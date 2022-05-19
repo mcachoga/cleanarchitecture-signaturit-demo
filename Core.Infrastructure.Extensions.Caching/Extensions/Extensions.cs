@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AspNetCoreHero.Extensions.Caching
+namespace Signaturit.Infrastructure.Extensions.Caching
 {
     public static class Extensions
     {

@@ -4,7 +4,7 @@ using Signaturit.Domain.Entities.Catalog;
 using Moq;
 using System.Collections.Generic;
 
-namespace Signaturi.Infrastructure.UnitTests.Mocks
+namespace Signaturit.Infrastructure.UnitTests.Mocks
 {
     public static class RepositoryMocks
     {

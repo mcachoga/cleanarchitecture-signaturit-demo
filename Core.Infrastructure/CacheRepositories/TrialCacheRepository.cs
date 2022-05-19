@@ -2,7 +2,7 @@
 using Signaturit.Application.Interfaces.Repositories;
 using Signaturit.Domain.Entities.Catalog;
 using Signaturit.Infrastructure.CacheKeys;
-using AspNetCoreHero.Extensions.Caching;
+using Signaturit.Infrastructure.Extensions.Caching;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Collections.Generic;
 using System.Threading.Tasks;
