@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CacheKeys\BrandCacheKeys.cs" />
+    <Compile Remove="CacheKeys\ProductCacheKeys.cs" />
+    <Compile Remove="CacheRepositories\BrandCacheRepository.cs" />
+    <Compile Remove="CacheRepositories\ProductCacheRepository.cs" />
+    <Compile Remove="Repositories\BrandRepository.cs" />
+    <Compile Remove="Repositories\ProductRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.1" />
+    <PackageReference Include="MailKit" Version="2.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+    <PackageReference Include="MimeKit" Version="2.10.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Application\Signaturit.Application.csproj" />
+    <ProjectReference Include="..\Core.Domain\Signaturit.Domain.csproj" />
+    <ProjectReference Include="..\Core.Infrastructure.Extensions.Caching\Signaturit.Infrastructure.Extensions.Caching.csproj" />
+    <ProjectReference Include="..\Core.Infrastructure.Extensions.EfCoreTrail\Signaturit.Infrastructure.Extensions.EfCoreTrail.csproj" />
+    <ProjectReference Include="..\Core.Infrastructure.Extensions.ThrowR\Signaturit.Infrastructure.Extensions.ThrowR.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Migrations\ApplicationDb\" />
+  </ItemGroup>
+</Project>

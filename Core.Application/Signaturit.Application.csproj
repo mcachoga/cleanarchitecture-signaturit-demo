@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EventNotifications\**" />
+    <Compile Remove="Features\Brands\**" />
+    <Compile Remove="Features\Products\**" />
+    <Compile Remove="Features\Trials\Events\**" />
+    <Compile Remove="Interfaces\Events\**" />
+    <EmbeddedResource Remove="EventNotifications\**" />
+    <EmbeddedResource Remove="Features\Brands\**" />
+    <EmbeddedResource Remove="Features\Products\**" />
+    <EmbeddedResource Remove="Features\Trials\Events\**" />
+    <EmbeddedResource Remove="Interfaces\Events\**" />
+    <None Remove="EventNotifications\**" />
+    <None Remove="Features\Brands\**" />
+    <None Remove="Features\Products\**" />
+    <None Remove="Features\Trials\Events\**" />
+    <None Remove="Interfaces\Events\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CacheKeys\ProductCacheKeys.cs" />
+    <Compile Remove="Interfaces\CacheRepositories\IBrandCacheRepository.cs" />
+    <Compile Remove="Interfaces\CacheRepositories\IProductCacheRepository.cs" />
+    <Compile Remove="Interfaces\Repositories\IBrandRepository.cs" />
+    <Compile Remove="Interfaces\Repositories\IProductRepository.cs" />
+    <Compile Remove="Mappings\BrandProfile.cs" />
+    <Compile Remove="Mappings\ProductProfile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.7" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Application.Results\Signaturit.Application.Results.csproj" />
+    <ProjectReference Include="..\Core.Domain\Signaturit.Domain.csproj" />
+    <ProjectReference Include="..\Core.Infrastructure.Extensions.ThrowR\Signaturit.Infrastructure.Extensions.ThrowR.csproj" />
+  </ItemGroup>
+</Project>
