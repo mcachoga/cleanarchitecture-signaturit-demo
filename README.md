@@ -14,18 +14,18 @@ Signaturit.Web / appsettings.json
 
 Una vez creada la base de datos, y asignandola en las cadenas de conexión, ejecutar (USANDO EL PROYECTO DE INFRASTRUCTURE):
 
-'''ts
+''''ts
 update-database -context IdentityContext
 update-database -context ApplicationDbContext
-'''
+''''
 
 Esto ya debería de generar las tablas correctamente. A veces da un error (me ha pasado muuuy pocas veces), por lo que ejecuto estos
 comandos y vuelvo a actualizar la base datos con los comandos anteriores:
 
-'''ts
+''''ts
 add-migration initial2 -context ApplicationDbContext
 add-migration initialIdentity2 -context IdentityContext
-'''
+''''
 
 Se le puede poner el nombre que se quiera, pero initial y initialIdentity ya existen.
 
